@@ -1,21 +1,21 @@
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Play, AlertTriangle, Users, Globe, TrendingUp } from 'lucide-react';
-import heroBackground from '@/assets/hero-background.jpg';
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Play, AlertTriangle, Users, Globe, TrendingUp } from "lucide-react";
+import heroBackground from "@/assets/wall.jpg";
 
 const Hero = () => {
   const stats = [
-    { label: 'Counties Covered', value: '47', icon: Users },
-    { label: 'East Africa Coverage', value: '5+', icon: Globe },
-    { label: 'Prediction Accuracy', value: '89%', icon: TrendingUp },
-    { label: 'Active Alerts Today', value: '8', icon: AlertTriangle }
+    { label: "Counties Covered", value: "47", icon: Users },
+    { label: "East Africa Coverage", value: "5+", icon: Globe },
+    { label: "Prediction Accuracy", value: "89%", icon: TrendingUp },
+    { label: "Active Alerts Today", value: "8", icon: AlertTriangle },
   ];
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroBackground})` }}
         />
@@ -33,11 +33,11 @@ const Hero = () => {
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
               animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${3 + Math.random() * 2}s`
+              animationDuration: `${3 + Math.random() * 2}s`,
             }}
           />
         ))}
-        
+
         {/* Grid overlay */}
         <div className="absolute inset-0 opacity-10 bg-[linear-gradient(rgba(0,194,212,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,194,212,0.1)_1px,transparent_1px)] bg-[size:100px_100px]" />
       </div>
@@ -46,7 +46,10 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Trust Badge */}
-          <Badge variant="secondary" className="mb-6 bg-white/10 backdrop-blur-sm border-white/20 text-white">
+          <Badge
+            variant="secondary"
+            className="mb-6 bg-white/10 backdrop-blur-sm border-white/20 text-white"
+          >
             <AlertTriangle className="w-4 h-4 mr-2" />
             Trusted by Kenya's Leading Emergency Response Teams
           </Badge>
@@ -63,41 +66,52 @@ const Hero = () => {
           </h1>
 
           {/* Supporting Tagline */}
-          <p className="text-xl lg:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <p
+            className="text-xl lg:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in"
+            style={{ animationDelay: "0.2s" }}
+          >
             AI-Powered Early Warning Systems for Resilient Communities
           </p>
 
           {/* Call-to-Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <div
+            className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in"
+            style={{ animationDelay: "0.4s" }}
+          >
             <Button variant="hero" size="xl" className="group">
               <AlertTriangle className="w-5 h-5 mr-2 group-hover:animate-pulse" />
               Activate Live Alerts
             </Button>
-            
+
             <Button variant="glass" size="xl" className="group">
               <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
               View Demo
             </Button>
-            
-            <Button variant="outline" size="xl" className="border-white/30 text-white hover:bg-white/10">
+
+            <Button
+              variant="outline"
+              size="xl"
+              className="border-white/30 text-white hover:bg-white/10"
+            >
               Partner With Us
             </Button>
           </div>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          <div
+            className="grid grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-in"
+            style={{ animationDelay: "0.6s" }}
+          >
             {stats.map((stat, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 group"
               >
                 <stat.icon className="w-8 h-8 text-accent mb-3 mx-auto group-hover:scale-110 transition-transform" />
                 <div className="text-2xl lg:text-3xl font-bold text-white mb-1">
                   {stat.value}
                 </div>
-                <div className="text-sm text-white/80">
-                  {stat.label}
-                </div>
+                <div className="text-sm text-white/80">{stat.label}</div>
               </div>
             ))}
           </div>

@@ -1,11 +1,11 @@
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
-import { 
-  Shield, 
-  Phone, 
-  Mail, 
-  MapPin, 
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Badge } from "@/components/ui/badge";
+import {
+  Shield,
+  Phone,
+  Mail,
+  MapPin,
   Clock,
   Facebook,
   Twitter,
@@ -15,37 +15,49 @@ import {
   FileText,
   Users,
   AlertTriangle,
-  Download
-} from 'lucide-react';
+  Download,
+} from "lucide-react";
 
 const Footer = () => {
   const quickLinks = [
-    { label: 'Early Warning Systems', href: '#services' },
-    { label: 'Risk Assessment', href: '#services' },
-    { label: 'Community Training', href: '#services' },
-    { label: 'Emergency Response', href: '#services' },
-    { label: 'Live Dashboard', href: '#dashboard' },
-    { label: 'Case Studies', href: '#resources' }
+    { label: "Early Warning Systems", href: "#services" },
+    { label: "Risk Assessment", href: "#services" },
+    { label: "Community Training", href: "#services" },
+    { label: "Emergency Response", href: "#services" },
+    { label: "Live Dashboard", href: "#dashboard" },
+    { label: "Case Studies", href: "#resources" },
   ];
 
   const resources = [
-    { label: 'Best Practices Guide', icon: FileText },
-    { label: 'API Documentation', icon: Globe },
-    { label: 'Training Materials', icon: Users },
-    { label: 'Research Publications', icon: Download }
+    { label: "Best Practices Guide", icon: FileText },
+    { label: "API Documentation", icon: Globe },
+    { label: "Training Materials", icon: Users },
+    { label: "Research Publications", icon: Download },
   ];
 
   const emergencyContacts = [
-    { label: 'Global Emergency Hotline', number: '+1-800-GUARDIAN', available: '24/7' },
-    { label: 'Technical Support', number: '+1-800-TECH-911', available: '24/7' },
-    { label: 'Partnership Inquiries', number: '+1-800-PARTNER', available: 'Business Hours' }
+    {
+      label: "Global Emergency Hotline",
+      number: "+1-800-GUARDIAN",
+      available: "24/7",
+    },
+    {
+      label: "Technical Support",
+      number: "+1-800-TECH-911",
+      available: "24/7",
+    },
+    {
+      label: "Partnership Inquiries",
+      number: "+1-800-PARTNER",
+      available: "Business Hours",
+    },
   ];
 
   const socialLinks = [
-    { icon: Facebook, label: 'Facebook', href: '#', followers: '25K' },
-    { icon: Twitter, label: 'Twitter', href: '#', followers: '48K' },
-    { icon: Linkedin, label: 'LinkedIn', href: '#', followers: '32K' },
-    { icon: Youtube, label: 'YouTube', href: '#', followers: '15K' }
+    { icon: Facebook, label: "Facebook", href: "#", followers: "25K" },
+    { icon: Twitter, label: "Twitter", href: "#", followers: "48K" },
+    { icon: Linkedin, label: "LinkedIn", href: "#", followers: "32K" },
+    { icon: Youtube, label: "YouTube", href: "#", followers: "15K" },
   ];
 
   return (
@@ -60,10 +72,16 @@ const Footer = () => {
                 Emergency Situation? Get Immediate Help
               </span>
             </div>
-            <Button variant="glass" size="lg" className="bg-white/20 hover:bg-white/30">
+            <Button
+              variant="glass"
+              size="lg"
+              className="bg-white/20 hover:bg-white/30"
+            >
               <Phone className="w-5 h-5 mr-2" />
               Call +1-800-GUARDIAN
-              <Badge variant="secondary" className="ml-2 bg-white/20">24/7</Badge>
+              <Badge variant="secondary" className="ml-2 bg-white/20">
+                24/7
+              </Badge>
             </Button>
           </div>
         </div>
@@ -73,19 +91,19 @@ const Footer = () => {
       <div className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-4 gap-12">
-            
             {/* Company Info */}
             <div className="lg:col-span-1">
               <div className="flex items-center space-x-2 mb-6">
                 <Shield className="h-8 w-8 text-accent" />
                 <span className="font-display font-bold text-2xl">
-                  GuardianWeave
+                  KenyaSAFE
                 </span>
               </div>
-              
+
               <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-                Leading the future of disaster preparedness through AI-powered 
-                early warning systems and comprehensive emergency management solutions.
+                Leading the future of disaster preparedness through AI-powered
+                early warning systems and comprehensive emergency management
+                solutions.
               </p>
 
               {/* Contact Info */}
@@ -96,7 +114,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center gap-3 text-sm">
                   <Mail className="w-4 h-4 text-accent" />
-                  <span>contact@guardianweave.org</span>
+                  <span>contact@KenyaSAFE.org</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm">
                   <Clock className="w-4 h-4 text-accent" />
@@ -144,7 +162,7 @@ const Footer = () => {
                   Get the latest disaster alerts and preparedness insights.
                 </p>
                 <div className="flex gap-2">
-                  <Input 
+                  <Input
                     placeholder="Enter your email"
                     className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
                   />
@@ -160,7 +178,10 @@ const Footer = () => {
               <h3 className="font-semibold text-lg mb-6">Emergency Contacts</h3>
               <div className="space-y-4">
                 {emergencyContacts.map((contact, index) => (
-                  <div key={index} className="p-4 bg-white/5 rounded-lg border border-white/10">
+                  <div
+                    key={index}
+                    className="p-4 bg-white/5 rounded-lg border border-white/10"
+                  >
                     <div className="font-medium text-sm mb-1">
                       {contact.label}
                     </div>
@@ -168,7 +189,10 @@ const Footer = () => {
                       <span className="text-accent font-semibold">
                         {contact.number}
                       </span>
-                      <Badge variant="secondary" className="text-xs bg-white/10">
+                      <Badge
+                        variant="secondary"
+                        className="text-xs bg-white/10"
+                      >
                         {contact.available}
                       </Badge>
                     </div>
@@ -189,7 +213,9 @@ const Footer = () => {
                       <social.icon className="w-4 h-4 group-hover:scale-110 transition-transform" />
                       <div>
                         <div className="font-medium">{social.label}</div>
-                        <div className="text-xs text-primary-foreground/60">{social.followers}</div>
+                        <div className="text-xs text-primary-foreground/60">
+                          {social.followers}
+                        </div>
                       </div>
                     </a>
                   ))}
@@ -205,13 +231,21 @@ const Footer = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
             <div className="flex flex-wrap items-center gap-6 text-sm text-primary-foreground/70">
-              <span>© 2024 GuardianWeave. All rights reserved.</span>
-              <a href="#" className="hover:text-accent transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-accent transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-accent transition-colors">Accessibility</a>
-              <a href="#" className="hover:text-accent transition-colors">Cookie Policy</a>
+              <span>© 2024 KenyaSAFE. All rights reserved.</span>
+              <a href="#" className="hover:text-accent transition-colors">
+                Privacy Policy
+              </a>
+              <a href="#" className="hover:text-accent transition-colors">
+                Terms of Service
+              </a>
+              <a href="#" className="hover:text-accent transition-colors">
+                Accessibility
+              </a>
+              <a href="#" className="hover:text-accent transition-colors">
+                Cookie Policy
+              </a>
             </div>
-            
+
             <div className="flex items-center gap-4">
               <Badge variant="secondary" className="bg-success/20 text-success">
                 <Shield className="w-3 h-3 mr-1" />
