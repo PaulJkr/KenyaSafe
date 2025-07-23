@@ -7,47 +7,47 @@ import teamPhoto from '@/assets/team-photo.jpg';
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "GuardianWeave's early warning system has transformed our disaster preparedness capabilities. We now have 72-hour advance notice that has saved countless lives and resources.",
-      author: "Dr. Sarah Chen",
+      quote: "GuardianWeave has revolutionized how we handle disaster preparedness across Kenya's 47 counties. The early warning system gives us crucial time to mobilize resources and protect our communities.",
+      author: "Dr. Grace Wanjiku",
       role: "Director of Emergency Management",
-      organization: "Singapore Civil Defence Force",
+      organization: "Kenya National Disaster Management Authority",
       avatar: teamPhoto,
-      impact: "89% reduction in response time",
+      impact: "75% reduction in response time",
       rating: 5
     },
     {
-      quote: "The granular risk mapping and assessment tools have revolutionized how we approach community resilience planning. The data accuracy and visualization capabilities are unmatched.",
-      author: "Michael Rodriguez",
-      role: "Emergency Operations Coordinator",
-      organization: "FEMA Regional Office",
+      quote: "The flood prediction system has been invaluable during the rainy seasons. We can now evacuate communities in Tana River days before floods hit, saving countless lives.",
+      author: "Joseph Kimani",
+      role: "County Emergency Coordinator",
+      organization: "Tana River County Government",
       avatar: teamPhoto,
-      impact: "50% improvement in resource allocation",
+      impact: "90% improvement in evacuation efficiency",
       rating: 5
     },
     {
-      quote: "Our partnership with GuardianWeave has enabled us to train over 15,000 community volunteers. The VR simulation training is incredibly effective and engaging.",
-      author: "Dr. Amara Okafor",
+      quote: "Working with GuardianWeave has transformed our drought response capabilities. The early warning data helps us deploy resources to pastoralist communities before crisis hits.",
+      author: "Dr. Mary Njoroge",
       role: "Regional Program Director",
-      organization: "International Red Cross",
+      organization: "Kenya Red Cross Society",
       avatar: teamPhoto,
-      impact: "300% increase in volunteer retention",
+      impact: "60% increase in preventive interventions",
       rating: 5
     },
     {
-      quote: "The real-time coordination platform has streamlined our multi-agency response efforts. What used to take hours now happens in minutes.",
-      author: "Colonel James Mitchell",
-      role: "Emergency Response Commander",
-      organization: "UK Emergency Services",
+      quote: "The real-time coordination platform has streamlined our multi-agency response efforts across the region. Communication between counties is now seamless.",
+      author: "Colonel Peter Muthuri",
+      role: "Regional Emergency Response Commander",
+      organization: "Kenya Defence Forces",
       avatar: teamPhoto,
-      impact: "60% faster multi-agency coordination",
+      impact: "50% faster inter-county coordination",
       rating: 5
     }
   ];
 
   const partners = [
-    "United Nations OCHA", "World Bank", "Red Cross", "FEMA", 
-    "European Emergency Response", "Asian Disaster Preparedness Center",
-    "WHO Emergency Program", "UNESCO Disaster Risk Reduction"
+    "Kenya National Disaster Management Authority", "Kenya Red Cross Society", "Kenya Meteorological Department", "National Drought Management Authority", 
+    "UN Office for Coordination of Humanitarian Affairs", "World Food Programme Kenya",
+    "USAID Kenya", "Kenya Wildlife Service Emergency Response"
   ];
 
   const certifications = [
@@ -188,15 +188,15 @@ const Testimonials = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Card className="p-4 bg-card hover:bg-card-hover transition-colors">
-                <div className="text-2xl font-bold text-accent">150+</div>
-                <div className="text-sm text-muted-foreground">Organizations</div>
+                <div className="text-2xl font-bold text-accent">47</div>
+                <div className="text-sm text-muted-foreground">Counties Covered</div>
               </Card>
               <Card className="p-4 bg-card hover:bg-card-hover transition-colors">
-                <div className="text-2xl font-bold text-accent">85+</div>
-                <div className="text-sm text-muted-foreground">Countries</div>
+                <div className="text-2xl font-bold text-accent">5+</div>
+                <div className="text-sm text-muted-foreground">East Africa Region</div>
               </Card>
               <Card className="p-4 bg-card hover:bg-card-hover transition-colors">
-                <div className="text-2xl font-bold text-accent">50K+</div>
+                <div className="text-2xl font-bold text-accent">2M+</div>
                 <div className="text-sm text-muted-foreground">Lives Protected</div>
               </Card>
             </div>

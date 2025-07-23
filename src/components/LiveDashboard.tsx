@@ -33,42 +33,42 @@ const LiveDashboard = () => {
   const alerts = [
     {
       id: 1,
-      type: 'Earthquake',
-      location: 'Pacific Ring of Fire',
+      type: 'Flood Warning',
+      location: 'Tana River County',
       severity: 'High',
-      magnitude: '6.2',
-      population: '2.3M',
-      time: '2 min ago',
+      magnitude: 'Level 4',
+      population: '120K',
+      time: '15 min ago',
       color: 'alert'
     },
     {
       id: 2,
-      type: 'Flood Warning',
-      location: 'Bangladesh Delta',
+      type: 'Drought Alert',
+      location: 'Turkana County',
       severity: 'Medium',
       magnitude: 'Level 3',
-      population: '850K',
-      time: '15 min ago',
+      population: '250K',
+      time: '1 hour ago',
       color: 'warning'
     },
     {
       id: 3,
-      type: 'Wildfire',
-      location: 'California, USA',
+      type: 'Landslide Risk',
+      location: 'Murang\'a County',
       severity: 'High',
-      magnitude: '1,200 acres',
+      magnitude: 'Critical Zone',
       population: '45K',
-      time: '1 hour ago',
+      time: '2 hours ago',
       color: 'alert'
     },
     {
       id: 4,
-      type: 'Cyclone Watch',
-      location: 'Bay of Bengal',
+      type: 'Locust Swarm',
+      location: 'Marsabit County',
       severity: 'Medium',
-      magnitude: 'Cat 2',
-      population: '1.8M',
-      time: '3 hours ago',
+      magnitude: 'Dense Swarm',
+      population: '80K',
+      time: '4 hours ago',
       color: 'warning'
     }
   ];
@@ -105,12 +105,12 @@ const LiveDashboard = () => {
   ];
 
   const regions = [
-    { name: 'Asia-Pacific', risk: 'High', alerts: 8, color: 'alert' },
-    { name: 'North America', risk: 'Medium', alerts: 3, color: 'warning' },
-    { name: 'Europe', risk: 'Low', alerts: 1, color: 'success' },
-    { name: 'South America', risk: 'Medium', alerts: 2, color: 'warning' },
-    { name: 'Africa', risk: 'High', alerts: 5, color: 'alert' },
-    { name: 'Middle East', risk: 'Low', alerts: 0, color: 'success' }
+    { name: 'Central Kenya', risk: 'Medium', alerts: 2, color: 'warning' },
+    { name: 'Coast Region', risk: 'High', alerts: 3, color: 'alert' },
+    { name: 'Northern Kenya', risk: 'High', alerts: 4, color: 'alert' },
+    { name: 'Western Kenya', risk: 'Low', alerts: 1, color: 'success' },
+    { name: 'Eastern Kenya', risk: 'Medium', alerts: 2, color: 'warning' },
+    { name: 'Rift Valley', risk: 'Medium', alerts: 3, color: 'warning' }
   ];
 
   const getSeverityColor = (severity: string) => {

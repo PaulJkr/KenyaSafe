@@ -5,10 +5,10 @@ import heroBackground from '@/assets/hero-background.jpg';
 
 const Hero = () => {
   const stats = [
-    { label: 'Organizations Trust Us', value: '150+', icon: Users },
-    { label: 'Countries Covered', value: '85+', icon: Globe },
+    { label: 'Counties Covered', value: '47', icon: Users },
+    { label: 'East Africa Coverage', value: '5+', icon: Globe },
     { label: 'Prediction Accuracy', value: '89%', icon: TrendingUp },
-    { label: 'Active Alerts Today', value: '12', icon: AlertTriangle }
+    { label: 'Active Alerts Today', value: '8', icon: AlertTriangle }
   ];
 
   return (
@@ -48,7 +48,7 @@ const Hero = () => {
           {/* Trust Badge */}
           <Badge variant="secondary" className="mb-6 bg-white/10 backdrop-blur-sm border-white/20 text-white">
             <AlertTriangle className="w-4 h-4 mr-2" />
-            Trusted by 150+ Organizations Worldwide
+            Trusted by Kenya's Leading Emergency Response Teams
           </Badge>
 
           {/* Main Headline */}
