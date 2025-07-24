@@ -60,7 +60,7 @@ src/
 ```
 ```bash
 # Clone the repo
-git clone https://github.com/your-org/disaster-platform-ui.git
+git clone https://github.com/KenyaSafe.git
 
 # Navigate into project
 cd disaster-platform-ui
